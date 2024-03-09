@@ -240,6 +240,10 @@ body {
     @media only screen and (max-width: 48.75em) {
       .newsletter .input-wrapper {
         flex-direction: column; } }
+  @media only screen and (max-width: 48.75em) {
+    .newsletter {
+      padding-left: 4rem;
+      padding-right: 4rem; } }
 
 .nav {
   grid-column: center-start/center-end; }

@@ -65,4 +65,8 @@
       flex-direction: column;
     }
   }
+  @media only screen and (max-width: $break-point-2) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
