@@ -34,7 +34,7 @@ body {
 
 .announcement {
   grid-column: full-start/full-end;
-  background-color: #ff951f;
+  background-color: #f76d4e;
   text-align: center;
   padding: 1rem; }
   .announcement__text {
@@ -169,14 +169,14 @@ body {
         transition: border 0.2s; }
         .header__heading .input-wrapper input:focus {
           outline: none;
-          border: 1px solid #ff951f; }
+          border: 1px solid #f76d4e; }
         .header__heading .input-wrapper input::placeholder {
           color: inherit; }
         @media only screen and (max-width: 41.25em) {
           .header__heading .input-wrapper input {
             width: 100%; } }
       .header__heading .input-wrapper button {
-        background-color: #ff951f;
+        background-color: #f76d4e;
         color: #fff;
         border-radius: 0.5rem;
         padding: 1.2rem 2rem;
@@ -222,14 +222,14 @@ body {
       transition: border 0.2s; }
       .newsletter .input-wrapper input:focus {
         outline: none;
-        border: 1px solid #ff951f; }
+        border: 1px solid #f76d4e; }
       .newsletter .input-wrapper input::placeholder {
         color: inherit; }
       @media only screen and (max-width: 48.75em) {
         .newsletter .input-wrapper input {
           width: 100%; } }
     .newsletter .input-wrapper button {
-      background-color: #ff951f;
+      background-color: #f76d4e;
       color: #fff;
       border-radius: 0.5rem;
       padding: 1.2rem 2rem;
