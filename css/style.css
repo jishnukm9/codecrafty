@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 55%; } }
+
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #38464d; }
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 65vh min-content repeat(14, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media only screen and (max-width: 41.25em) {
+    .container {
+      grid-template-rows: min-content 75vh min-content repeat(14, min-content); } }
+
+.announcement {
+  grid-column: full-start/full-end;
+  background-color: #ff951f;
+  text-align: center;
+  padding: 1rem; }
+  .announcement__text {
+    font-size: 1.6rem;
+    color: #fff; }
+  .announcement__link {
+    text-decoration: none; }
+
+.dev-tools {
+  grid-column: full-start/full-end;
+  background-color: #f9fafa;
+  display: grid;
+  padding-top: 6.4rem;
+  padding-bottom: 8.8rem;
+  grid-template-columns: [full-start-dev-tools] 1fr [center-start-dev-tools] repeat(8, [col-start-dev-tools] minmax(min-content, 14rem) [col-end-dev-tools]) [center-end-dev-tools] 1fr [full-end-dev-tools]; }
+  .dev-tools__2 {
+    grid-column: center-start-dev-tools/center-end-dev-tools; }
+    .dev-tools__2__container {
+      padding: 1.6rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 7rem; }
+      .dev-tools__2__container__image img {
+        width: 4rem;
+        margin-bottom: 1.2rem; }
+      .dev-tools__2__container__image h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+        color: #26afeb; }
+      .dev-tools__2__container__image p {
+        font-size: 1.6rem;
+        font-weight: 300; }
+    .dev-tools__2__heading {
+      padding-bottom: 8.8rem; }
+      .dev-tools__2__heading__text {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 300; }
+      .dev-tools__2__heading__image {
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: 300; }
+        .dev-tools__2__heading__image .content-logo {
+          color: #4ed8f7; }
+
+.dev-tools--white-bg {
+  background-color: #fff; }
+
+.footer {
+  grid-column: full-start/full-end; }
+
+.footer {
+  padding-top: 6.4rem;
+  padding-bottom: 8.8rem; }
+
+.footer-text {
+  text-align: center; }
+  .footer-text__1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 0.8rem; }
+  .footer-text__2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1.8rem; }
+  .footer-text__3__box {
+    display: flex;
+    justify-content: center; }
+    .footer-text__3__box__content {
+      font-size: 1.6rem;
+      font-weight: 300;
+      max-width: 70rem;
+      color: #aaa; }
+
+.header {
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(to top right, #4ed8f7, #26afeb 70%);
+  color: #fff; }
+  .header__logo-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.2rem; }
+    .header__logo-box__logo {
+      width: 27rem; }
+      .header__logo-box__logo img {
+        width: 100%; }
+      @media only screen and (max-width: 56.25em) {
+        .header__logo-box__logo {
+          width: 24rem; } }
+    .header__logo-box__myname {
+      width: 30rem; }
+      .header__logo-box__myname img {
+        width: 100%; }
+      @media only screen and (max-width: 56.25em) {
+        .header__logo-box__myname {
+          width: 24rem; } }
+  .header__heading {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center; }
+    .header__heading__text {
+      font-size: 3.2rem;
+      font-weight: 400; }
+    .header__heading__subtext {
+      font-size: 2rem;
+      margin-top: 4.8rem;
+      margin-bottom: 1.6rem;
+      font-weight: 300; }
+    .header__heading .input-wrapper {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 0.5rem;
+      border-radius: 0.5rem; }
+      .header__heading .input-wrapper input {
+        background-color: #fff;
+        color: #aaa;
+        font-size: 2rem;
+        padding: 1.2rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        margin-right: 0.3rem;
+        border: 1px solid transparent;
+        -webkit-transition: border 0.2s;
+        transition: border 0.2s; }
+        .header__heading .input-wrapper input:focus {
+          outline: none;
+          border: 1px solid #ff951f; }
+        .header__heading .input-wrapper input::placeholder {
+          color: inherit; }
+        @media only screen and (max-width: 41.25em) {
+          .header__heading .input-wrapper input {
+            width: 100%; } }
+      .header__heading .input-wrapper button {
+        background-color: #ff951f;
+        color: #fff;
+        border-radius: 0.5rem;
+        padding: 1.2rem 2rem;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer; }
+        @media only screen and (max-width: 41.25em) {
+          .header__heading .input-wrapper button {
+            width: 100%; } }
+      @media only screen and (max-width: 41.25em) {
+        .header__heading .input-wrapper {
+          flex-direction: column; } }
+
+.newsletter {
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(to top right, #4ed8f7, #26afeb 70%);
+  padding: 8.8rem;
+  text-align: center; }
+  .newsletter__subtext {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    font-weight: 300;
+    color: #fff; }
+  .newsletter .input-wrapper {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem; }
+    .newsletter .input-wrapper input {
+      background-color: #fff;
+      color: #aaa;
+      font-size: 2rem;
+      padding: 1.2rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      margin-right: 0.3rem;
+      border: 1px solid transparent;
+      -webkit-transition: border 0.2s;
+      transition: border 0.2s; }
+      .newsletter .input-wrapper input:focus {
+        outline: none;
+        border: 1px solid #ff951f; }
+      .newsletter .input-wrapper input::placeholder {
+        color: inherit; }
+      @media only screen and (max-width: 48.75em) {
+        .newsletter .input-wrapper input {
+          width: 100%; } }
+    .newsletter .input-wrapper button {
+      background-color: #ff951f;
+      color: #fff;
+      border-radius: 0.5rem;
+      padding: 1.2rem 2rem;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      font-weight: 100; }
+      @media only screen and (max-width: 48.75em) {
+        .newsletter .input-wrapper button {
+          width: 100%; } }
+    @media only screen and (max-width: 48.75em) {
+      .newsletter .input-wrapper {
+        flex-direction: column; } }
+
+.nav {
+  grid-column: center-start/center-end; }
+  .nav__container {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem; }
+    .nav__container ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      font-size: 1.2rem; }
+      .nav__container ul li {
+        margin-bottom: 1.2rem; }
+        .nav__container ul li a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          gap: 1rem;
+          padding: 0.7rem 1rem;
+          color: inherit;
+          background-color: #f0f3f3;
+          border-radius: 5rem;
+          transition: all 0.37s; }
+        .nav__container ul li a:hover {
+          background-color: #26afeb;
+          color: #fff; }
+          .nav__container ul li a:hover .nav-logo {
+            color: #fff; }
+        .nav__container ul li .nav-logo {
+          font-size: 1.6rem;
+          color: #26afeb;
+          transition: all 0.6s; }

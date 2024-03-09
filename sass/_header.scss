@@ -1,0 +1,102 @@
+.header {
+  grid-column: full-start/full-end;
+
+  background-image: linear-gradient(
+    to top right,
+    $color-secondary,
+    $color-secondary-dark 70%
+  );
+  color: $color-light;
+
+  &__logo-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.2rem;
+    &__logo {
+      width: 27rem;
+
+      img {
+        width: 100%;
+      }
+      @media only screen and (max-width: $break-point-1) {
+        width: 24rem;
+      }
+    }
+    &__myname {
+      width: 30rem;
+      img {
+        width: 100%;
+      }
+      @media only screen and (max-width: $break-point-1) {
+        width: 24rem;
+      }
+    }
+  }
+
+  &__heading {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+    &__text {
+      font-size: 3.2rem;
+      font-weight: 400;
+    }
+    &__subtext {
+      font-size: 2rem;
+      margin-top: 4.8rem;
+      margin-bottom: 1.6rem;
+      font-weight: 300;
+    }
+
+    .input-wrapper {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $color-light;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      input {
+        background-color: $color-light;
+        color: $color-grey-light-3;
+        font-size: 2rem;
+        // width: 30rem;
+        padding: 1.2rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        margin-right: 0.3rem;
+        border: 1px solid transparent;
+        -webkit-transition: border 0.2s;
+        transition: border 0.2s;
+
+        &:focus {
+          outline: none;
+          border: 1px solid $color-primary;
+        }
+        &::placeholder {
+          color: inherit;
+        }
+        @media only screen and (max-width: $break-point-3) {
+          width: 100%;
+        }
+      }
+
+      button {
+        background-color: $color-primary;
+        color: $color-light;
+        border-radius: 0.5rem;
+        padding: 1.2rem 2rem;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        @media only screen and (max-width: $break-point-3) {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: $break-point-3) {
+        flex-direction: column;
+      }
+    }
+  }
+}

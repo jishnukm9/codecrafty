@@ -1,0 +1,64 @@
+.dev-tools {
+  grid-column: full-start/full-end;
+  background-color: $color-grey-light-2;
+  display: grid;
+  padding-top: 6.4rem;
+  padding-bottom: 8.8rem;
+  grid-template-columns:
+    [full-start-dev-tools] 1fr [center-start-dev-tools] repeat(
+      8,
+      [col-start-dev-tools] minmax(min-content, 14rem) [col-end-dev-tools]
+    )
+    [center-end-dev-tools] 1fr [full-end-dev-tools];
+
+  &__2 {
+    grid-column: center-start-dev-tools/center-end-dev-tools;
+    // background-color: aqua;
+    &__container {
+      padding: 1.6rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 7rem;
+      &__image {
+        img {
+          width: 4rem;
+          margin-bottom: 1.2rem;
+        }
+        h3 {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 1.2rem;
+          color: $color-secondary-dark;
+        }
+        p {
+          font-size: 1.6rem;
+          font-weight: 300;
+        }
+      }
+    }
+    &__heading {
+      padding-bottom: 8.8rem;
+      &__text {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 300;
+      }
+      &__image {
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: 300;
+        .content-logo {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
+
+.dev-tools--white-bg {
+  background-color: $color-light;
+}
+
+.footer {
+  grid-column: full-start/full-end;
+}

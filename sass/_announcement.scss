@@ -1,0 +1,20 @@
+
+
+.announcement{
+    grid-column: full-start/full-end;
+    background-color: $color-primary;
+    text-align: center;
+    padding:1rem;
+
+    // &-container{
+    //     margin:0 auto;
+    // }
+    &__text{
+        font-size: 1.6rem;
+        color:$color-light;
+    }
+    &__link{
+        text-decoration: none;
+    }
+}
+

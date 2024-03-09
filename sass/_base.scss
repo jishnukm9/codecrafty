@@ -1,0 +1,66 @@
+// colors
+$color-primary: #ff951f;
+
+$color-secondary: #4ed8f7;
+$color-secondary-dark: #26afeb;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #f9fafa;
+$color-grey-light-3: #aaa;
+$color-grey-light-4: #38464d;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+$color-light: #fff;
+
+$color-nav-item: #f0f3f3;
+
+$font-family: "Lato", "Arial", sans-serif;
+
+$break-point-1: 56.25em; //900px/16 = 56.25em;
+$break-point-2: 48.75em; //780px/16 = 43.75em;
+$break-point-3: 41.25em; // 660px;
+$break-point-4: 31.25em; // 660px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  @media only screen and (max-width: $break-point-1) {
+    font-size: 55%;
+  }
+}
+
+body {
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-grey-light-4;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 65vh min-content repeat(14, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $break-point-3) {
+    grid-template-rows: min-content 75vh min-content repeat(14, min-content);
+  }
+}

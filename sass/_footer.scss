@@ -1,0 +1,29 @@
+.footer {
+  padding-top: 6.4rem;
+  padding-bottom: 8.8rem;
+}
+
+.footer-text {
+  text-align: center;
+  &__1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 0.8rem;
+  }
+  &__2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1.8rem;
+  }
+  &__3__box {
+    display: flex;
+    justify-content: center;
+    &__content {
+      font-size: 1.6rem;
+      font-weight: 300;
+      max-width: 70rem;
+
+      color: $color-grey-light-3;
+    }
+  }
+}

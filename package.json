@@ -1,0 +1,15 @@
+{
+  "name": "CodeCrafty",
+  "version": "1.0.0",
+  "description": "Codecrafty webpage",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Jishnu",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
