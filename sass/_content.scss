@@ -29,7 +29,15 @@
           font-weight: 700;
           margin-bottom: 1.2rem;
           color: $color-secondary-dark;
+          a {
+            text-decoration: none;
+            color: $color-secondary-dark;
+            &:hover {
+              color: $color-primary;
+            }
+          }
         }
+
         p {
           font-size: 1.6rem;
           font-weight: 300;

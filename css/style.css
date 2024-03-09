@@ -36,7 +36,8 @@ body {
   grid-column: full-start/full-end;
   background-color: #f76d4e;
   text-align: center;
-  padding: 1rem; }
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; }
   .announcement__text {
     font-size: 1.6rem;
     color: #fff; }
@@ -65,6 +66,11 @@ body {
         font-weight: 700;
         margin-bottom: 1.2rem;
         color: #26afeb; }
+        .dev-tools__2__container__image h3 a {
+          text-decoration: none;
+          color: #26afeb; }
+          .dev-tools__2__container__image h3 a:hover {
+            color: #f76d4e; }
       .dev-tools__2__container__image p {
         font-size: 1.6rem;
         font-weight: 300; }

@@ -1,20 +1,18 @@
-
-
-.announcement{
-    grid-column: full-start/full-end;
-    background-color: $color-primary;
-    text-align: center;
-    padding:1rem;
-
-    // &-container{
-    //     margin:0 auto;
-    // }
-    &__text{
-        font-size: 1.6rem;
-        color:$color-light;
-    }
-    &__link{
-        text-decoration: none;
-    }
+.announcement {
+  grid-column: full-start/full-end;
+  background-color: $color-primary;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  // &-container{
+  //     margin:0 auto;
+  // }
+  &__text {
+    font-size: 1.6rem;
+    color: $color-light;
+  }
+  &__link {
+    text-decoration: none;
+  }
 }
-
