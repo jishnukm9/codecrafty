@@ -37,6 +37,9 @@
     max-width: 80rem;
     margin: 0 auto;
     text-align: center;
+    @media only screen and (max-width: $break-point-1) {
+      margin-top: 6.6rem;
+    }
     &__text {
       font-size: 3.2rem;
       font-weight: 400;
